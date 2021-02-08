@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- The charset attribute specifies the character encoding for the HTML document. -->
+    <!-- The HTML5 specification encourages web developers to use the UTF-8 character set, which covers almost all of the characters and symbols in the world! -->
+    <meta charset="utf-8" />
+    <title>California's Greatest Cliffs</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body id="activities">
+    <!-- Container is to wrap everything -->
+    <div id="container">
+      <header>
+        <div class="main-header">
+          <div class="logo">
+            <img src="images/logo.png" alt="Great Cliff Logo" width="125" />
+          </div>
+        </div>
+        <!-- Main navigation -->
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cliffs.html">Cliffs</a></li>
+            <li class="active"><a href="activities.html">Activities</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- End main Navigation -->
+      </header>
+
+      <section id="timeofday">
+        <span>Your Current Local Time: </span>
+        <span id="clock"></span>
+      </section>
+
+      <!-- Main content -->
+      <main>
+        <div class="first">
+          <h1>Activities</h1>
+          <p>
+            There are many planned activities at all the cliff sites. Some are
+            scheduled daily, weekly, monthly and yearly. These activities are
+            not however run by the state park and recreational department. They
+            are operated and manage by private vendors but are partners with the
+            state department. Therefore, for schedule inquiries or information,
+            please contact them directly. For a list of activities, please refer
+            to the table below:
+          </p>
+
+          <table id="activity">
+            <caption>
+              Activities at the Cliffs
+            </caption>
+            <thead>
+              <!-- This is the start of Table head. -->
+              <tr>
+                <th>Activity</th>
+                <th>West Cliff</th>
+                <th>North Cliff</th>
+                <th>East Cliff</th>
+                <th>South Cliff</th>
+              </tr>
+            </thead>
+            <!-- End of Table head. -->
+
+            <tbody id="highlight">
+              <!-- Start of Table body. -->
+              <tr>
+                <td>Hiking</td>
+                <td class="second">College Hikes</td>
+                <td class="second">Family Fun</td>
+                <td class="second">Treasure Trails</td>
+                <td class="second">Canyon Explorer</td>
+              </tr>
+              <tr>
+                <td>Kayak</td>
+                <td class="second">Western Kayak Meetup</td>
+                <td>Not Available</td>
+                <td class="second">Youth Kayaking</td>
+                <td class="second">Kayak Down</td>
+              </tr>
+              <tr>
+                <td>Skydiving</td>
+                <td class="second">Seacliff Diving</td>
+                <td class="second">Sky is the limit</td>
+                <td>Not Available</td>
+                <td class="second">Sky Diving for Beginners</td>
+              </tr>
+              <tr>
+                <td>Biking</td>
+                <td class="second">Bicycle for One</td>
+                <td>Not Available</td>
+                <td class="second">Bike Meetup Group</td>
+                <td>Not Available</td>
+              </tr>
+              <tr>
+                <td>Camping</td>
+                <td class="second">Youth Camp</td>
+                <td class="second">Rent a Tent</td>
+                <td class="second">Campground Adventure</td>
+                <td class="second">Sunset Camping</td>
+              </tr>
+            </tbody>
+            <!-- End of Table body. -->
+
+            <tfoot>
+              <!-- Start of Table footer. -->
+              <!-- This is for future use. -->
+            </tfoot>
+            <!-- End of Table footer. -->
+          </table>
+        </div>
+
+        <div id="displaySelected">
+          <div id="result">
+            <h4>My selected activities to enquire:</h4>
+          </div>
+          <div id="sendinfo">
+            <input type="email" placeholder="johndoe@gmail.com" />
+            <button>Get Info</button>
+          </div>
+        </div>
+        <section>
+          <!-- Section tag defines a section in a document. -->
+          <ul id="partners"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <div id="nondisclaimer">
+          <div class="copy">
+            <p>&copy; Copyright 2020 :: GreatCliffs.com</p>
+          </div>
+          <div class="social">
+            <!--This is to show all social websites-->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+          </div>
+        </div>
+
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </footer>
+    </div>
+    <!-- End of container -->
+    <!-- JavaScript Codes -->
+    <script src="js/digclock.js"></script>
+    <script src="js/site_scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/activity.js"></script>
+  </body>
+</html>
